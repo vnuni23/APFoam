@@ -1,0 +1,11 @@
+reactions/makeReactions.C
+reactions/makeLangmuirHinshelwoodReactions.C
+reactions/makeMichaelisMentenReactions.C
+
+chemistryReaders/chemkinReader/chemkinReader.C
+chemistryReaders/chemkinReader/chemkinLexer.L
+chemistryReaders/chemistryReader/makeChemistryReaders.C
+
+
+
+LIB = ./libreaction

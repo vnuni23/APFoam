@@ -1,0 +1,2540 @@
+elements        
+1
+(
+Unknown
+)
+;
+
+species         
+72
+(
+N2
+O2
+H2O
+H2
+NO
+NO2
+O3
+O
+O1D
+OH
+HO2
+H2O2
+NO3
+N2O5
+HONO
+HNO3
+HCO3
+PNA
+CO
+FORM
+ALD2
+C2O3
+PAN
+ALDX
+CXO3
+PANX
+XO2
+XO2N
+NTR
+ETOH
+CH4
+MEO2
+MEOH
+MEPX
+FACD
+ETHA
+ROOH
+AACD
+PACD
+PAR
+ROR
+ETH
+OLE
+IOLE
+ISOP
+ISPD
+TERP
+TOL
+XYL
+CRES
+TO2
+OPEN
+CRO
+MGLY
+SO2
+SULF
+PFRM
+PACR
+SACR
+PACT
+BUTD
+TOLU
+MXYL
+OXYL
+PXYL
+APIN
+BPIN
+CL2
+HOCL
+CL
+CLO
+FMCL
+)
+;
+
+reactions
+{
+
+    reaction-R1
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO2 = NO + O";
+
+        A               1.20433e-02;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R2
+    {
+        type            irreversiblethirdBodyAPArrheniusReaction;
+        reaction        "O + O2 + M = O3 + M";
+
+        A               2.17587e+08;
+        beta            -2.4;
+        Ta              0.0;
+
+        defaultEfficiency  1;
+    } 
+
+    reaction-R3
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "O3 + NO = NO2";
+
+        A               1.80660e+09;
+        beta            0;
+        Ta              1500.0;
+    } 
+
+    reaction-R4
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "O + NO2 = NO";
+
+        A               3.37232e+09;
+        beta            0;
+        Ta              -180.0;
+    } 
+
+    reaction-R5
+    {
+        type            irreversibleAPArrheniusAPFallOffReaction;
+        reaction        "O + NO2 = NO3";
+
+        k0
+        {
+        A               1.50550e-10;
+        beta            -1.8;
+        Ta              0.0;
+        } 
+
+        kInf
+        {
+        A               1.32484e+10;
+        beta            -0.7;
+        Ta              0.0;
+        } 
+
+        F
+        {
+        f               0.6;
+        n               1.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R6
+    {
+        type            irreversibleAPArrheniusAPFallOffReaction;
+        reaction        "O + NO = NO2";
+
+        k0
+        {
+        A               5.41980e-11;
+        beta            -1.5;
+        Ta              0.0;
+        } 
+
+        kInf
+        {
+        A               1.80660e+10;
+        beta            0.0;
+        Ta              0.0;
+        } 
+
+        F
+        {
+        f               0.6;
+        n               1.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R7
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO2 + O3 = NO3";
+
+        A               7.22640e+07;
+        beta            0;
+        Ta              2450.0;
+    } 
+
+    reaction-R8
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "O3 = O";
+
+        A               5.09500e-05;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R9
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "O3 = O1D";
+
+        A               6.10667e-04;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R10
+    {
+        type            irreversiblethirdBodyAPArrheniusReaction;
+        reaction        "O1D + M = O + M";
+
+        A               2.10000e-11;
+        beta            0.0;
+        Ta              -102.0;
+
+        defaultEfficiency  1;
+    } 
+
+    reaction-R11
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "O1D + H2O = 2OH";
+
+        A               1.32484e+11;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R12
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "O3 + OH = HO2";
+
+        A               1.02374e+09;
+        beta            0;
+        Ta              940.0;
+    } 
+
+    reaction-R13
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "O3 + HO2 = OH";
+
+        A               6.02200e+06;
+        beta            0;
+        Ta              490.0;
+    } 
+
+    reaction-R14
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO3 = NO2 + O";
+
+        A               2.56667e-01;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R15
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO3 = NO";
+
+        A               3.18167e-02;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R16
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO3 + NO = 2NO2";
+
+        A               9.03300e+09;
+        beta            0;
+        Ta              -170.0;
+    } 
+
+    reaction-R17
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO3 + NO2 = NO + NO2";
+
+        A               2.70990e+07;
+        beta            0;
+        Ta              1260.0;
+    } 
+
+    reaction-R18
+    {
+        type            irreversibleAPArrheniusAPFallOffReaction;
+        reaction        "NO3 + NO2 = N2O5";
+
+        k0
+        {
+        A               1.20440e-09;
+        beta            -4.4;
+        Ta              0.0;
+        } 
+
+        kInf
+        {
+        A               8.43080e+08;
+        beta            -0.7;
+        Ta              0.0;
+        } 
+
+        F
+        {
+        f               0.6;
+        n               1.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R19
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "N2O5 + H2O = 2HNO3";
+
+        A               1.50550e-01;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R20
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "N2O5 + H2O + H2O = 2HNO3";
+
+        A               6.52761e+02;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R21
+    {
+        type            irreversibleAPArrheniusAPFallOffReaction;
+        reaction        "N2O5 = NO3 + NO2";
+
+        k0
+        {
+        A               1.00000e-03;
+        beta            -3.5;
+        Ta              11000.0;
+        } 
+
+        kInf
+        {
+        A               9.70000e+14;
+        beta            0.1;
+        Ta              11080.0;
+        } 
+
+        F
+        {
+        f               0.45;
+        n               1.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R22
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO + NO + O2 = 2NO2";
+
+        A               1.19673e+03;
+        beta            0;
+        Ta              -530.0;
+    } 
+
+    reaction-R23
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO + NO2 + H2O = 2HONO";
+
+        A               1.81322e+02;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R24
+    {
+        type            irreversibleAPArrheniusAPFallOffReaction;
+        reaction        "NO + OH = HONO";
+
+        k0
+        {
+        A               4.21540e-10;
+        beta            -2.6;
+        Ta              0.0;
+        } 
+
+        kInf
+        {
+        A               2.16792e+10;
+        beta            -0.1;
+        Ta              0.0;
+        } 
+
+        F
+        {
+        f               0.6;
+        n               1.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R25
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "HONO = NO + OH";
+
+        A               1.90000e-03;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R26
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + HONO = NO2";
+
+        A               1.08396e+10;
+        beta            0;
+        Ta              390.0;
+    } 
+
+    reaction-R27
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "HONO + HONO = NO + NO2";
+
+        A               6.02200e+00;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R28
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO2 + OH = HNO3";
+
+        A               1.20440e-09;
+        beta            0;
+        Ta              -3.0;
+    } 
+
+    reaction-R29
+    {
+        type            irreversibleAPArrheniusFallOffThreeKReaction;
+        reaction        "OH + HNO3 = NO3";
+
+        k0
+        {
+        A               1.44528e+07;
+        beta            0.0;
+        Ta              -460.0;
+        } 
+
+        k2
+        {
+        A               1.62594e+04;
+        beta            0.0;
+        Ta              -2199.0;
+        } 
+
+        k3
+        {
+        A               3.91430e-13;
+        beta            0.0;
+        Ta              -1335.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R30
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "HO2 + NO = OH + NO2";
+
+        A               2.10770e+09;
+        beta            0;
+        Ta              -250.0;
+    } 
+
+    reaction-R31
+    {
+        type            irreversibleAPArrheniusAPFallOffReaction;
+        reaction        "HO2 + NO2 = PNA";
+
+        k0
+        {
+        A               1.08396e-10;
+        beta            -3.2;
+        Ta              0.0;
+        } 
+
+        kInf
+        {
+        A               2.83034e+09;
+        beta            0.0;
+        Ta              0.0;
+        } 
+
+        F
+        {
+        f               0.6;
+        n               1.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R32
+    {
+        type            irreversibleAPArrheniusAPFallOffReaction;
+        reaction        "PNA = HO2 + NO2";
+
+        k0
+        {
+        A               4.10000e-05;
+        beta            0.0;
+        Ta              10650.0;
+        } 
+
+        kInf
+        {
+        A               4.80000e+15;
+        beta            0.0;
+        Ta              11170.0;
+        } 
+
+        F
+        {
+        f               0.6;
+        n               1.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R33
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + PNA = NO2";
+
+        A               7.82860e+08;
+        beta            0;
+        Ta              -380.0;
+    } 
+
+    reaction-R34
+    {
+        type            irreversibleAPArrheniusFallOffTwoKReaction;
+        reaction        "HO2 + HO2 = H2O2";
+
+        k1
+        {
+        A               1.38506e+08;
+        beta            0.0;
+        Ta              -600.0;
+        } 
+
+        k2
+        {
+        A               1.02374e-12;
+        beta            0.0;
+        Ta              -1000.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R35
+    {
+        type            irreversibleAPArrheniusFallOffTwoKReaction;
+        reaction        "HO2 + HO2 + H2O = H2O2";
+
+        k1
+        {
+        A               1.16772e+08;
+        beta            0.0;
+        Ta              -2800.0;
+        } 
+
+        k2
+        {
+        A               8.63095e-13;
+        beta            0.0;
+        Ta              -3200.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R36
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "H2O2 = 2OH";
+
+        A               9.39667e-06;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R37
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + H2O2 = HO2";
+
+        A               1.74638e+09;
+        beta            0;
+        Ta              160.0;
+    } 
+
+    reaction-R38
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "O1D + H2 = OH + HO2";
+
+        A               6.62420e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R39
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + H2 = HO2";
+
+        A               3.31210e+09;
+        beta            0;
+        Ta              2000.0;
+    } 
+
+    reaction-R40
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + O = HO2";
+
+        A               1.32484e+10;
+        beta            0;
+        Ta              -120.0;
+    } 
+
+    reaction-R41
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + OH = O";
+
+        A               2.52924e+09;
+        beta            0;
+        Ta              240.0;
+    } 
+
+    reaction-R42
+    {
+        type            irreversibleAPArrheniusAPFallOffReaction;
+        reaction        "OH + OH = H2O2";
+
+        k0
+        {
+        A               4.15518e-10;
+        beta            -1.0;
+        Ta              0.0;
+        } 
+
+        kInf
+        {
+        A               1.56572e+10;
+        beta            0.0;
+        Ta              0.0;
+        } 
+
+        F
+        {
+        f               0.6;
+        n               1.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R43
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + HO2 = N2";
+
+        A               2.89056e+10;
+        beta            0;
+        Ta              -250.0;
+    } 
+
+    reaction-R44
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "HO2 + O = OH";
+
+        A               1.80660e+10;
+        beta            0;
+        Ta              -200.0;
+    } 
+
+    reaction-R45
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "H2O2 + O = OH + HO2";
+
+        A               8.43080e+08;
+        beta            0;
+        Ta              2000.0;
+    } 
+
+    reaction-R46
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO3 + O = NO2";
+
+        A               6.02200e+09;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R47
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO3 + OH = HO2 + NO2";
+
+        A               1.32484e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R48
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO3 + HO2 = HNO3";
+
+        A               2.10770e+09;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R49
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO3 + O3 = NO2";
+
+        A               6.02200e+03;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R50
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO3 + NO3 = 2NO2";
+
+        A               5.11870e+08;
+        beta            0;
+        Ta              2450.0;
+    } 
+
+    reaction-R51
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PNA = 0.610HO2 + 0.610NO2 + 0.390OH + 0.390NO3";
+
+        A               9.03333e-06;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R52
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "HNO3 = OH + NO2";
+
+        A               9.00333e-07;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R53
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "N2O5 = NO2 + NO3";
+
+        A               0.00000e+00;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R54
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "XO2 + NO = NO2";
+
+        A               1.56572e+09;
+        beta            0;
+        Ta              -365.0;
+    } 
+
+    reaction-R55
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "XO2N + NO = NTR";
+
+        A               1.56572e+09;
+        beta            0;
+        Ta              -365.0;
+    } 
+
+    reaction-R56
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "XO2 + HO2 = ROOH";
+
+        A               4.51650e+08;
+        beta            0;
+        Ta              -700.0;
+    } 
+
+    reaction-R57
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "XO2N + HO2 = ROOH";
+
+        A               4.51650e+08;
+        beta            0;
+        Ta              -700.0;
+    } 
+
+    reaction-R58
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "XO2 + XO2 = N2";
+
+        A               4.09496e+07;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R59
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "XO2N + XO2N = N2";
+
+        A               4.09496e+07;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R60
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "XO2 + XO2N = N2";
+
+        A               4.09496e+07;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R61
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NTR + OH = HNO3 + HO2 + 0.330FORM + 0.330ALD2 + 0.330ALDX - 0.660PAR";
+
+        A               3.55298e+08;
+        beta            0;
+        Ta              360.0;
+    } 
+
+    reaction-R62
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NTR = NO2 + HO2 + 0.330FORM + 0.330ALD2 + 0.330ALDX - 0.660PAR";
+
+        A               3.92000e-06;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R63
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "ROOH + OH = XO2 + 0.500ALD2 + 0.500ALDX";
+
+        A               1.81262e+09;
+        beta            0;
+        Ta              -190.0;
+    } 
+
+    reaction-R64
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "ROOH = OH + HO2 + 0.500ALD2 + 0.500ALDX";
+
+        A               6.56667e-06;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R65
+    {
+        type            irreversibleAPArrheniusFallOffTwoKReaction;
+        reaction        "OH + CO = HO2";
+
+        k1
+        {
+        A               8.67168e+07;
+        beta            0.0;
+        Ta              0.0;
+        } 
+
+        k2
+        {
+        A               2.06555e-12;
+        beta            0.0;
+        Ta              0.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R66
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + CH4 = MEO2";
+
+        A               1.47539e+09;
+        beta            0;
+        Ta              1775.0;
+    } 
+
+    reaction-R67
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "MEO2 + NO = FORM + HO2 + NO2";
+
+        A               1.68616e+09;
+        beta            0;
+        Ta              -300.0;
+    } 
+
+    reaction-R68
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "MEO2 + HO2 = MEPX";
+
+        A               2.46902e+08;
+        beta            0;
+        Ta              -750.0;
+    } 
+
+    reaction-R69
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "MEO2 + MEO2 = 1.370FORM + 0.740HO2 + 0.630MEOH";
+
+        A               5.72090e+07;
+        beta            0;
+        Ta              -390.0;
+    } 
+
+    reaction-R70
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "MEPX + OH = 0.700MEO2 + 0.300XO2 + 0.300HO2";
+
+        A               2.28836e+09;
+        beta            0;
+        Ta              -200.0;
+    } 
+
+    reaction-R71
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "MEPX = FORM + HO2 + OH";
+
+        A               6.56667e-06;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R72
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "MEOH + OH = FORM + HO2";
+
+        A               4.39606e+09;
+        beta            0;
+        Ta              620.0;
+    } 
+
+    reaction-R73
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "FORM + OH = HO2 + CO";
+
+        A               5.41980e+09;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R74
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "FORM = 2HO2 + CO";
+
+        A               4.60667e-05;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R75
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "FORM = CO";
+
+        A               5.20000e-05;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R76
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "FORM + O = OH + HO2 + CO";
+
+        A               2.04748e+10;
+        beta            0;
+        Ta              1600.0;
+    } 
+
+    reaction-R77
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "FORM + NO3 = HNO3 + HO2 + CO";
+
+        A               3.49276e+05;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R78
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "FORM + HO2 = HCO3";
+
+        A               5.84134e+06;
+        beta            0;
+        Ta              -625.0;
+    } 
+
+    reaction-R79
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "HCO3 = FORM + HO2";
+
+        A               2.40000e+12;
+        beta            0;
+        Ta              7000.0;
+    } 
+
+    reaction-R80
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "HCO3 + NO = FACD + NO2 + HO2";
+
+        A               3.37232e+09;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R81
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "HCO3 + HO2 = MEPX";
+
+        A               3.37232e+06;
+        beta            0;
+        Ta              -2300.0;
+    } 
+
+    reaction-R82
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "FACD + OH = HO2";
+
+        A               2.40880e+08;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R83
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "ALD2 + O = C2O3 + OH";
+
+        A               1.08396e+10;
+        beta            0;
+        Ta              1100.0;
+    } 
+
+    reaction-R84
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "ALD2 + OH = C2O3";
+
+        A               3.37232e+09;
+        beta            0;
+        Ta              -270.0;
+    } 
+
+    reaction-R85
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "ALD2 + NO3 = C2O3 + HNO3";
+
+        A               8.43080e+08;
+        beta            0;
+        Ta              1900.0;
+    } 
+
+    reaction-R86
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "ALD2 = MEO2 + CO + HO2";
+
+        A               6.93167e-06;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R87
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "C2O3 + NO = MEO2 + NO2";
+
+        A               4.87782e+09;
+        beta            0;
+        Ta              -270.0;
+    } 
+
+    reaction-R88
+    {
+        type            irreversibleAPArrheniusAPFallOffReaction;
+        reaction        "C2O3 + NO2 = PAN";
+
+        k0
+        {
+        A               1.62594e-07;
+        beta            -7.1;
+        Ta              0.0;
+        } 
+
+        kInf
+        {
+        A               7.22640e+09;
+        beta            -0.9;
+        Ta              0.0;
+        } 
+
+        F
+        {
+        f               0.3;
+        n               1.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R89
+    {
+        type            irreversibleAPArrheniusAPFallOffReaction;
+        reaction        "PAN = C2O3 + NO2";
+
+        k0
+        {
+        A               4.90000e-03;
+        beta            0.0;
+        Ta              12100.0;
+        } 
+
+        kInf
+        {
+        A               5.40000e+16;
+        beta            0.0;
+        Ta              13830.0;
+        } 
+
+        F
+        {
+        f               0.3;
+        n               1.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R90
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PAN = C2O3 + NO2";
+
+        A               1.01950e-06;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R91
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "C2O3 + HO2 = 0.800PACD + 0.200AACD + 0.200O3";
+
+        A               2.58946e+08;
+        beta            0;
+        Ta              -1040.0;
+    } 
+
+    reaction-R92
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "C2O3 + MEO2 = 0.900MEO2 + 0.900HO2 + FORM + 0.100AACD";
+
+        A               1.20440e+09;
+        beta            0;
+        Ta              -500.0;
+    } 
+
+    reaction-R93
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "C2O3 + XO2 = 0.900MEO2 + 0.100AACD";
+
+        A               2.64968e+08;
+        beta            0;
+        Ta              -1070.0;
+    } 
+
+    reaction-R94
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "C2O3 + C2O3 = 2MEO2";
+
+        A               1.74638e+09;
+        beta            0;
+        Ta              -500.0;
+    } 
+
+    reaction-R95
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PACD + OH = C2O3";
+
+        A               2.40880e+08;
+        beta            0;
+        Ta              -200.0;
+    } 
+
+    reaction-R96
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PACD = MEO2 + OH";
+
+        A               0.00000e+00;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R97
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "AACD + OH = MEO2";
+
+        A               2.40880e+08;
+        beta            0;
+        Ta              -200.0;
+    } 
+
+    reaction-R98
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "ALDX + O = CXO3 + OH";
+
+        A               7.82860e+09;
+        beta            0;
+        Ta              870.0;
+    } 
+
+    reaction-R99
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "ALDX + OH = CXO3";
+
+        A               3.07122e+09;
+        beta            0;
+        Ta              -405.0;
+    } 
+
+    reaction-R100
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "ALDX + NO3 = CXO3 + HNO3";
+
+        A               3.91430e+06;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R101
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "ALDX = MEO2 + CO + HO2";
+
+        A               2.33833e-05;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R102
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CXO3 + NO = ALD2 + NO2 + HO2 + XO2";
+
+        A               4.03474e+09;
+        beta            0;
+        Ta              -340.0;
+    } 
+
+    reaction-R103
+    {
+        type            irreversibleAPArrheniusAPFallOffReaction;
+        reaction        "CXO3 + NO2 = PANX";
+
+        k0
+        {
+        A               1.62594e-07;
+        beta            -7.1;
+        Ta              0.0;
+        } 
+
+        kInf
+        {
+        A               7.22640e+09;
+        beta            -0.9;
+        Ta              0.0;
+        } 
+
+        F
+        {
+        f               0.3;
+        n               1.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R104
+    {
+        type            irreversibleAPArrheniusAPFallOffReaction;
+        reaction        "PANX = CXO3 + NO2";
+
+        k0
+        {
+        A               4.90000e-03;
+        beta            0.0;
+        Ta              12100.0;
+        } 
+
+        kInf
+        {
+        A               5.40000e+16;
+        beta            0.0;
+        Ta              13830.0;
+        } 
+
+        F
+        {
+        f               0.3;
+        n               1.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R105
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PANX = CXO3 + NO2";
+
+        A               1.01950e-06;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R106
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PANX + OH = ALD2 + NO2";
+
+        A               3.00000e-13;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R107
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CXO3 + HO2 = 0.800PACD + 0.200AACD + 0.200O3";
+
+        A               2.58946e+08;
+        beta            0;
+        Ta              -1040.0;
+    } 
+
+    reaction-R108
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CXO3 + MEO2 = 0.900ALD2 + 0.900XO2 + HO2 + 0.100AACD + 0.100FORM";
+
+        A               1.20440e+09;
+        beta            0;
+        Ta              -500.0;
+    } 
+
+    reaction-R109
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CXO3 + XO2 = 0.900ALD2 + 0.100AACD";
+
+        A               2.64968e+08;
+        beta            0;
+        Ta              -1070.0;
+    } 
+
+    reaction-R110
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CXO3 + CXO3 = 2ALD2 + 2XO2 + 2HO2";
+
+        A               1.74638e+09;
+        beta            0;
+        Ta              -500.0;
+    } 
+
+    reaction-R111
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CXO3 + C2O3 = MEO2 + XO2 + HO2 + ALD2";
+
+        A               1.74638e+09;
+        beta            0;
+        Ta              -500.0;
+    } 
+
+    reaction-R112
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PAR + OH = 0.870XO2 + 0.130XO2N + 0.110HO2 + 0.060ALD2 - 0.110PAR + 0.760ROR + 0.050ALDX";
+
+        A               4.87782e+08;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R113
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "ROR = 0.960XO2 + 0.600ALD2 + 0.940HO2 - 2.100PAR + 0.040XO2N + 0.020ROR + 0.500ALDX";
+
+        A               1.00000e+15;
+        beta            0;
+        Ta              8000.0;
+    } 
+
+    reaction-R114
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "ROR = HO2";
+
+        A               1.60000e+03;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R115
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "ROR + NO2 = NTR";
+
+        A               9.03300e+09;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R116
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "O + OLE = 0.200ALD2 + 0.300ALDX + 0.300HO2 + 0.200XO2 + 0.200CO + 0.200FORM + 0.010XO2N + 0.200PAR + 0.100OH";
+
+        A               6.02200e+09;
+        beta            0;
+        Ta              280.0;
+    } 
+
+    reaction-R117
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + OLE = 0.800FORM + 0.330ALD2 + 0.620ALDX + 0.800XO2 + 0.950HO2 - 0.700PAR";
+
+        A               1.92704e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R118
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "O3 + OLE = 0.180ALD2 + 0.740FORM + 0.320ALDX + 0.220XO2 + 0.100OH + 0.330CO + 0.440HO2 - PAR";
+
+        A               3.91430e+06;
+        beta            0;
+        Ta              1900.0;
+    } 
+
+    reaction-R119
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO3 + OLE = NO2 + FORM + 0.910XO2 + 0.090XO2N + 0.560ALDX + 0.350ALD2 - PAR";
+
+        A               4.21540e+08;
+        beta            0;
+        Ta              2160.0;
+    } 
+
+    reaction-R120
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "O + ETH = FORM + 1.700HO2 + CO + 0.700XO2 + 0.300OH";
+
+        A               6.26288e+09;
+        beta            0;
+        Ta              792.0;
+    } 
+
+    reaction-R121
+    {
+        type            irreversibleAPArrheniusAPFallOffReaction;
+        reaction        "OH + ETH = XO2 + 1.560FORM + 0.220ALDX + HO2";
+
+        k0
+        {
+        A               6.02200e-08;
+        beta            -0.8;
+        Ta              0.0;
+        } 
+
+        kInf
+        {
+        A               5.29936e+09;
+        beta            0.0;
+        Ta              0.0;
+        } 
+
+        F
+        {
+        f               0.6;
+        n               1.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R122
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "O3 + ETH = FORM + 0.630CO + 0.130HO2 + 0.130OH + 0.370FACD";
+
+        A               7.22640e+06;
+        beta            0;
+        Ta              2630.0;
+    } 
+
+    reaction-R123
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO3 + ETH = NO2 + XO2 + 2.0FORM";
+
+        A               1.98726e+09;
+        beta            0;
+        Ta              2880.0;
+    } 
+
+    reaction-R124
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "IOLE + O = 1.240ALD2 + 0.660ALDX + 0.100HO2 + 0.100XO2 + 0.100CO + 0.100PAR";
+
+        A               1.38506e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R125
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "IOLE + OH = 1.300ALD2 + 0.700ALDX + HO2 + XO2";
+
+        A               6.02200e+09;
+        beta            0;
+        Ta              -550.0;
+    } 
+
+    reaction-R126
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "IOLE + O3 = 0.650ALD2 + 0.350ALDX + 0.250FORM + 0.250CO + 0.500O + 0.500OH + 0.500HO2";
+
+        A               5.05848e+06;
+        beta            0;
+        Ta              1100.0;
+    } 
+
+    reaction-R127
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "IOLE + NO3 = 1.180ALD2 + 0.640ALDX + HO2 + NO2";
+
+        A               5.78112e+08;
+        beta            0;
+        Ta              270.0;
+    } 
+
+    reaction-R128
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "TOL + OH = 0.440HO2 + 0.080XO2 + 0.360CRES + 0.560TO2";
+
+        A               1.08396e+09;
+        beta            0;
+        Ta              -355.0;
+    } 
+
+    reaction-R129
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "TO2 + NO = 0.900NO2 + 0.900HO2 + 0.900OPEN + 0.100NTR";
+
+        A               4.87782e+09;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R130
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "TO2 = CRES + HO2";
+
+        A               4.20000e+00;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R131
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + CRES = 0.400CRO + 0.600XO2 + 0.600HO2 + 0.300OPEN";
+
+        A               2.46902e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R132
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CRES + NO3 = CRO + HNO3";
+
+        A               1.32484e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R133
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CRO + NO2 = NTR";
+
+        A               8.43080e+09;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R134
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CRO + HO2 = CRES";
+
+        A               3.31210e+09;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R135
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OPEN = C2O3 + HO2 + CO";
+
+        A               4.14600e-04;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R137
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OPEN + O3 = 0.030ALDX + 0.620C2O3 + 0.700FORM + 0.030XO2 + 0.690CO + 0.080OH + 0.760HO2 + 0.200MGLY";
+
+        A               3.25188e+04;
+        beta            0;
+        Ta              500.0;
+    } 
+
+    reaction-R138
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + XYL = 0.700HO2 + 0.500XO2 + 0.200CRES + 0.800MGLY + 1.100PAR + 0.300TO2";
+
+        A               1.02374e+10;
+        beta            0;
+        Ta              -116.0;
+    } 
+
+    reaction-R139
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + MGLY = XO2 + C2O3";
+
+        A               1.02374e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R140
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "MGLY = C2O3 + HO2 + CO";
+
+        A               2.60667e-04;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R141
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "O + ISOP = 0.750ISPD + 0.500FORM + 0.250XO2 + 0.250HO2 + 0.250CXO3 + 0.250PAR";
+
+        A               2.16792e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R142
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + ISOP = 0.912ISPD + 0.629FORM + 0.991XO2 + 0.912HO2 + 0.088XO2N";
+
+        A               1.52959e+10;
+        beta            0;
+        Ta              -407.6;
+    } 
+
+    reaction-R143
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "O3 + ISOP = 0.650ISPD + 0.600FORM + 0.200XO2 + 0.066HO2 + 0.266OH + 0.200CXO3 + 0.150ALDX + 0.350PAR + 0.066CO";
+
+        A               4.73329e+06;
+        beta            0;
+        Ta              1912.0;
+    } 
+
+    reaction-R144
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO3 + ISOP = 0.200ISPD + 0.800NTR + XO2 + 0.800HO2 + 0.200NO2 + 0.800ALDX + 2.400PAR";
+
+        A               1.82467e+09;
+        beta            0;
+        Ta              448.0;
+    } 
+
+    reaction-R145
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + ISPD = 1.565PAR + 0.167FORM + 0.713XO2 + 0.503HO2 + 0.334CO + 0.168MGLY + 0.252ALD2 + 0.210C2O3 + 0.250CXO3 + 0.120ALDX";
+
+        A               2.02339e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R146
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "O3 + ISPD = 0.114C2O3 + 0.150FORM + 0.850MGLY + 0.154HO2 + 0.268OH + 0.064XO2 + 0.020ALD2 + 0.360PAR + 0.225CO";
+
+        A               4.27562e+03;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R147
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO3 + ISPD = 0.357ALDX + 0.282FORM + 1.282PAR + 0.925HO2 + 0.643CO + 0.850NTR + 0.075CXO3 + 0.075XO2 + 0.150HNO3";
+
+        A               6.02200e+05;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R148
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "ISPD = 0.333CO + 0.067ALD2 + 0.900FORM + 0.832PAR + 1.033HO2 + 0.700XO2 + 0.967C2O3";
+
+        A               1.06020e-08;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R149
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "TERP + O = 0.150ALDX + 5.12PAR";
+
+        A               2.16792e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-R150
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "TERP + OH = 0.750HO2 + 1.250XO2 + 0.250XO2N + 0.280FORM + 1.66PAR + 0.470ALDX";
+
+        A               9.03300e+09;
+        beta            0;
+        Ta              -449.0;
+    } 
+
+    reaction-R151
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "TERP + O3 = 0.570OH + 0.070HO2 + 0.760XO2 + 0.180XO2N + 0.240FORM + 0.001CO + 7.000PAR + 0.210ALDX + 0.390CXO3";
+
+        A               7.22640e+05;
+        beta            0;
+        Ta              821.0;
+    } 
+
+    reaction-R152
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "TERP + NO3 = 0.470NO2 + 0.280HO2 + 1.030XO2 + 0.250XO2N + 0.470ALDX + 0.530NTR";
+
+        A               2.22814e+09;
+        beta            0;
+        Ta              -175.0;
+    } 
+
+    reaction-R153
+    {
+        type            irreversibleAPArrheniusAPFallOffReaction;
+        reaction        "SO2 + OH = SULF + HO2";
+
+        k0
+        {
+        A               1.80660e-10;
+        beta            -3.3;
+        Ta              0.0;
+        } 
+
+        kInf
+        {
+        A               9.03300e+08;
+        beta            0.0;
+        Ta              0.0;
+        } 
+
+        F
+        {
+        f               0.6;
+        n               1.0;
+        } 
+
+        thirdBodyEfficiencies
+        {
+        defaultEfficiency       1;
+        }
+    } 
+
+    reaction-R154
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + ETOH = HO2 + 0.900ALD2 + 0.050ALDX + 0.100FORM + 0.100XO2";
+
+        A               4.15518e+09;
+        beta            0;
+        Ta              230.0;
+    } 
+
+    reaction-R155
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + ETHA = 0.991ALD2 + 0.991XO2 + 0.009XO2N + HO2";
+
+        A               5.23914e+09;
+        beta            0;
+        Ta              1070.0;
+    } 
+
+    reaction-R156
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "NO2 + ISOP = 0.200ISPD + 0.800NTR + XO2 + 0.800HO2 + 0.200NO + 0.800ALDX + 2.400PAR";
+
+        A               9.03300e+01;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T01
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PFRM + OH = OH";
+
+        A               5.41980e+09;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T02
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PFRM + NO3 = NO3";
+
+        A               3.49276e+05;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T03
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PFRM + O = O";
+
+        A               2.04748e+10;
+        beta            0;
+        Ta              1600.0;
+    } 
+
+    reaction-T04
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PFRM = N2";
+
+        A               4.60667e-05;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T05
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PFRM = N2";
+
+        A               5.20000e-05;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T06
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PACT + OH = OH";
+
+        A               3.37232e+09;
+        beta            0;
+        Ta              -270.0;
+    } 
+
+    reaction-T07
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PACT + NO3 = NO3";
+
+        A               8.43080e+08;
+        beta            0;
+        Ta              1900.0;
+    } 
+
+    reaction-T08
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PACT + O = O";
+
+        A               1.08396e+10;
+        beta            0;
+        Ta              1100.0;
+    } 
+
+    reaction-T09
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PACT = N2";
+
+        A               6.93167e-06;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T10
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "BUTD + OH = OH + SACR";
+
+        A               8.43080e+09;
+        beta            0;
+        Ta              -424.0;
+    } 
+
+    reaction-T11
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "BUTD + O3 = O3 + SACR";
+
+        A               4.93804e+06;
+        beta            0;
+        Ta              2070.0;
+    } 
+
+    reaction-T12
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "BUTD + NO3 = NO3 + SACR";
+
+        A               1.07794e+08;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T13
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "BUTD + O = O3 + SACR";
+
+        A               2.40278e+09;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T14
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PACR + OH = OH";
+
+        A               1.20440e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T15
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PACR + O3 = O3";
+
+        A               1.57174e+02;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T16
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PACR + NO3 = NO3";
+
+        A               1.02374e+10;
+        beta            0;
+        Ta              3131.0;
+    } 
+
+    reaction-T17
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PACR = N2";
+
+        A               2.94500e-06;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T18
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "SACR + OH = OH";
+
+        A               1.20440e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T19
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "SACR + O3 = O3";
+
+        A               1.57174e+02;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T20
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "SACR + NO3 = NO3";
+
+        A               1.02374e+10;
+        beta            0;
+        Ta              3131.0;
+    } 
+
+    reaction-T21
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "SACR = N2";
+
+        A               2.94500e-06;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T22
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "TOLU + OH = OH";
+
+        A               1.08396e+09;
+        beta            0;
+        Ta              -355.0;
+    } 
+
+    reaction-T23
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "MXYL + OH = OH";
+
+        A               1.02374e+10;
+        beta            0;
+        Ta              -116.0;
+    } 
+
+    reaction-T24
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OXYL + OH = OH";
+
+        A               7.34684e+09;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T25
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "PXYL + OH = OH";
+
+        A               7.82860e+09;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T26
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "APIN + O = O";
+
+        A               1.68014e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T27
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "APIN + OH = OH";
+
+        A               7.22640e+09;
+        beta            0;
+        Ta              -440.0;
+    } 
+
+    reaction-T28
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "APIN + O3 = O3";
+
+        A               3.79386e+05;
+        beta            0;
+        Ta              580.0;
+    } 
+
+    reaction-T29
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "APIN + NO3 = NO3";
+
+        A               7.22640e+08;
+        beta            0;
+        Ta              -490.0;
+    } 
+
+    reaction-T30
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "BPIN + O = O";
+
+        A               1.69218e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T31
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "BPIN + OH = OH";
+
+        A               4.52252e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-T32
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "BPIN + O3 = O3";
+
+        A               1.04783e+06;
+        beta            0;
+        Ta              1260.0;
+    } 
+
+    reaction-T33
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "BPIN + NO3 = NO3";
+
+        A               1.69218e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-CL1
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CL2 = 2CL";
+
+        A               2.88833e-03;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-CL2
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "HOCL = OH + CL";
+
+        A               3.44167e-04;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-CL3
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CL + O3 = CLO";
+
+        A               1.38506e+10;
+        beta            0;
+        Ta              200.0;
+    } 
+
+    reaction-CL4
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CLO + CLO = 0.3CL2 + 1.4CL";
+
+        A               9.81586e+06;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-CL5
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CLO + NO = CL + NO2";
+
+        A               3.85408e+09;
+        beta            0;
+        Ta              -290.0;
+    } 
+
+    reaction-CL6
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CLO + HO2 = HOCL";
+
+        A               1.62594e+09;
+        beta            0;
+        Ta              -220.0;
+    } 
+
+    reaction-CL7
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "OH + FMCL = CL + CO";
+
+        A               3.01100e+08;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-CL8
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "FMCL = CL + CO + HO2";
+
+        A               0.00000e+00;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-CL9
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CL + CH4 = HCL + MEO2";
+
+        A               3.97452e+09;
+        beta            0;
+        Ta              1240.0;
+    } 
+
+    reaction-CL10
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CL + PAR = HCL + 0.870XO2 + 0.130XO2N + 0.110HO2 + 0.060ALD2 - 0.110PAR + 0.760ROR + 0.050ALDX";
+
+        A               3.01100e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-CL11
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CL + ETHA = HCL + 0.991ALD2 + 0.991XO2 + 0.009XO2N + HO2";
+
+        A               4.99826e+10;
+        beta            0;
+        Ta              100.0;
+    } 
+
+    reaction-CL12
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CL + ETH = FMCL + 2.000XO2 + 1.000HO2 + 1.000FORM";
+
+        A               6.44354e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-CL13
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CL + OLE = FMCL + 0.330ALD2 + 0.670ALDX + 2.000XO2 + 1.000HO2 - 1.000PAR";
+
+        A               1.50550e+11;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-CL14
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CL + IOLE = 0.300HCL + 0.700FMCL + 0.450ALD2 + 0.550ALDX + 0.300OLE + 0.300PAR + 2.000XO2 + 1.000HO2";
+
+        A               2.10770e+11;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-CL15
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CL + ISOP = 0.15HCL + 1.000XO2 + 1.000HO2 + 0.850FMCL + 1.000ISPD";
+
+        A               2.58946e+11;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-CL16
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CL + FORM = HCL + 1.000HO2 + 1.000CO";
+
+        A               4.93804e+10;
+        beta            0;
+        Ta              34.0;
+    } 
+
+    reaction-CL17
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CL + ALD2 = HCL + C2O3";
+
+        A               4.75738e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-CL18
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CL + ALDX = HCL + CXO3";
+
+        A               7.82860e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-CL19
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CL + MEOH = HCL + 1.000HO2 + 1.000FORM";
+
+        A               3.31210e+10;
+        beta            0;
+        Ta              0;
+    } 
+
+    reaction-CL20
+    {
+        type            irreversibleAPArrheniusReaction;
+        reaction        "CL + ETOH = HCL + 1.000HO2 + 1.000ALD2";
+
+        A               4.93804e+10;
+        beta            0;
+        Ta              -45.0;
+    } 
+
+
+
+
+}
+
+Tlow            250;
+Thigh           5000;

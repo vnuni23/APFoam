@@ -1,0 +1,66 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      epsilon;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -3 0 0 0 0];
+
+internalField   uniform 7.7291e-05;
+
+boundaryField
+{ 
+    source
+    {
+        type            fixedValue;
+        value           uniform 1e-10;
+    }
+    ground
+    {
+        type            epsilonWallFunction;
+        Cmu             0.09;
+        kappa           0.41;
+        E               9.8;
+        value           uniform 1e-10;
+    }
+    outlet
+    {
+        type            zeroGradient;
+        inletValue      uniform 0.001039837;
+        value           $internalField;
+    }
+    inlet
+    {
+        type            groovyBC;
+        valueExpression "(pos().z>=0 && pos().z<=0.04) ? (e_in1) : ((pos().z>0.04)  ? (e_in2) : 0)";
+        variables       "e_in1=(14.0695-55)/20*pos().z*500+55;e_in2=pow(pos().z*500/40,-1.00318)*7.01926;";
+        value           $internalField;//uniform 0.0;
+    }
+    left
+    {
+        type            symmetryPlane;
+    }
+    top
+    {
+        type            symmetryPlane;
+    }
+    right
+    {
+        type            symmetryPlane;
+    }
+
+}
+
+
+// ************************************************************************* //

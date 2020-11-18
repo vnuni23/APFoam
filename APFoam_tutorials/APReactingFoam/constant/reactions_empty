@@ -1,0 +1,23 @@
+elements        
+1
+(
+Unknown
+)
+;
+
+species         
+3
+(
+C2H6
+N2
+O2
+)
+;
+
+reactions
+{
+
+}
+
+Tlow            250;
+Thigh           5000;

@@ -1,0 +1,32 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+-------------------------------------------------------------------------------
+Description
+    Writes out values of fields from cells nearest to specified locations.
+
+\*---------------------------------------------------------------------------*/
+
+#includeEtc "caseDicts/postProcessing/probes/probes.cfg"
+
+        writeControl    adjustableRunTime; //timeStep;
+        writeInterval   1;
+
+fields (N2 O2 H2O H2 NO2 NO O3P O3 NO3 N2O5 HNO3 O1D OH HONO HO2 CO CO2 HNO4 HO2H SO2 SULF RO2R RO2N R2O2 RCHO XOOH HCHO CCHO MECO3 PAN RCO3 PAN2 BZCO3 BZO RNO3 ACET CRES PROD2 MGLY IPRD AFG1 AFG2 ETHENE ISOPRENE ALK3 ALK4 OLE1 OLE2 ARO1 ARO2 TERP XN XC CH4);
+probeLocations
+(
+    (11 15 1)
+    (11 15 12)
+    (11 15 23)
+    (22 15 1)
+    (22 15 12)
+    (22 15 23)
+    (33 15 1)
+    (33 15 12)
+    (33 15 23)
+);
+
+// ************************************************************************* //

@@ -1,0 +1,58 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      emissionProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+nEmissionRegions	0;  
+
+EmissionRegion-0  //name must in the format of 'EmissionRegion-number(start from 0)'
+{
+// set a box region for emission source, each cell inside the box has the same source rate
+
+box
+{
+p1 (0.691 0.664 0) ; // p1  (xmin, ymin, zmin)
+p2 (0.741 0.756 0.01);   // p2  (xmax, ymax, zmax)
+}
+
+
+EmissionComposition   // in the dimensions of kg/s, default value is 0
+{
+C2H6	 6.21e-6;
+}
+
+}
+
+
+/*EmissionRegion-1
+{
+// set a box region for emission source, each cell inside the box has the same source rate
+
+box
+{
+p1 (0 -1.81133e-14 0) ; // p1  (xmin, ymin, zmin)
+p2 (100 4 600);   // p2  (xmax, ymax, zmax)
+}
+
+
+EmissionComposition   // in the dimensions of kg/s, default value is 0
+{
+NO2     0.1;
+NO      0.9;
+}
+}
+*/
+
+// ************************************************************************* //

@@ -1,0 +1,82 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     |
+    \\  /    A nd           | Web:      www.OpenFOAM.org
+     \\/     M anipulation  |
+-------------------------------------------------------------------------------
+Description
+    Writes graph data for specified fields along a line, specified by start
+    and end points.
+
+\*---------------------------------------------------------------------------*/
+interpolationScheme cellPoint;
+setFormat raw;
+type    sets;
+//start   (22 15 0);
+//end     (22 15 144);
+
+
+
+/*
+setConfig
+{
+    type    lineCell; // lineCell, lineCellFace
+    axis    z;    // x, y, z, xyz
+    //nPoints     144; 
+}
+*/
+
+sets
+(
+    line_z_center
+    {
+        type    lineCell; // lineCell, lineCellFace
+        axis    xyz;    // x, y, z, xyz
+        //nPoints     144; 
+        start   (0.716 0.756 0);
+        end     (0.716 0.756 0.8);
+    }
+
+    line_z_lee
+    {
+        type    lineCell; // lineCell, lineCellFace
+        axis    xyz;    // x, y, z, xyz
+        //nPoints     144; 
+        start   (0.676 0.756 0);
+        end     (0.676 0.756 0.08);
+    }
+
+    line_z_wind
+    {
+        type    lineCell; // lineCell, lineCellFace
+        axis    xyz;    // x, y, z, xyz
+        //nPoints     144; 
+        start   (0.756 0.756 0);
+        end     (0.756 0.756 0.08);
+    }
+
+    line_roof
+    {
+        type    lineCell; // lineCell, lineCellFace
+        axis    xyz;    // x, y, z, xyz
+        //nPoints     144;  
+        start   (0.756 0.756 0.0801);
+        end     (1.032 0.756 0.0801);
+    }
+);
+
+fields (U C2H6);
+
+writeControl    writeTime;
+
+// Sampling and I/O settings
+//#includeEtc "caseDicts/postProcessing/graphs/sampleDict.cfg"
+
+// Override settings here, e.g.
+// setConfig { type midPoint; }
+
+// Must be last entry
+//#includeEtc "caseDicts/postProcessing/graphs/graph.cfg"
+
+// ************************************************************************* //

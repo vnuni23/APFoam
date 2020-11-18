@@ -1,0 +1,1500 @@
+N2
+{
+   specie
+   {
+       molWeight       28.01;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+O2
+{
+   specie
+   {
+       molWeight       32.0;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+H2O
+{
+   specie
+   {
+       molWeight       18.01;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+H2
+{
+   specie
+   {
+       molWeight       2.02;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+NO2
+{
+   specie
+   {
+       molWeight       46.01;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+NO
+{
+   specie
+   {
+       molWeight       30.01;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+O3P
+{
+   specie
+   {
+       molWeight       16.0;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+O3
+{
+   specie
+   {
+       molWeight       48.0;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+NO3
+{
+   specie
+   {
+       molWeight       62.01;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+N2O5
+{
+   specie
+   {
+       molWeight       108.02;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+HNO3
+{
+   specie
+   {
+       molWeight       63.02;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+O1D
+{
+   specie
+   {
+       molWeight       16.0;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+OH
+{
+   specie
+   {
+       molWeight       17.01;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+HONO
+{
+   specie
+   {
+       molWeight       47.02;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+HO2
+{
+   specie
+   {
+       molWeight       33.01;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+CO
+{
+   specie
+   {
+       molWeight       28.01;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+CO2
+{
+   specie
+   {
+       molWeight       44.01;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+HNO4
+{
+   specie
+   {
+       molWeight       79.02;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+HO2H
+{
+   specie
+   {
+       molWeight       34.01;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+SO2
+{
+   specie
+   {
+       molWeight       64.06;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+SULF
+{
+   specie
+   {
+       molWeight       98.08;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+RO2R
+{
+   specie
+   {
+       molWeight       1.0;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+RO2N
+{
+   specie
+   {
+       molWeight       1.0;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+R2O2
+{
+   specie
+   {
+       molWeight       1.0;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+RCHO
+{
+   specie
+   {
+       molWeight       58.08;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+XOOH
+{
+   specie
+   {
+       molWeight       76.1;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+HCHO
+{
+   specie
+   {
+       molWeight       30.03;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+CCHO
+{
+   specie
+   {
+       molWeight       44.05;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+MECO3
+{
+   specie
+   {
+       molWeight       75.04;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+PAN
+{
+   specie
+   {
+       molWeight       121.05;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+RCO3
+{
+   specie
+   {
+       molWeight       89.07;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+PAN2
+{
+   specie
+   {
+       molWeight       135.08;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+BZCO3
+{
+   specie
+   {
+       molWeight       137.12;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+BZO
+{
+   specie
+   {
+       molWeight       93.0;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+RNO3
+{
+   specie
+   {
+       molWeight       147.18;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+ACET
+{
+   specie
+   {
+       molWeight       58.08;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+CRES
+{
+   specie
+   {
+       molWeight       108.14;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+PROD2
+{
+   specie
+   {
+       molWeight       116.16;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+MGLY
+{
+   specie
+   {
+       molWeight       72.07;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+IPRD
+{
+   specie
+   {
+       molWeight       100.12;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+AFG1
+{
+   specie
+   {
+       molWeight       98.1;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+AFG2
+{
+   specie
+   {
+       molWeight       98.1;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+ETHENE
+{
+   specie
+   {
+       molWeight       28.05;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+ISOPRENE
+{
+   specie
+   {
+       molWeight       68.12;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+ALK3
+{
+   specie
+   {
+       molWeight       58.61;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+ALK4
+{
+   specie
+   {
+       molWeight       77.6;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+OLE1
+{
+   specie
+   {
+       molWeight       72.34;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+OLE2
+{
+   specie
+   {
+       molWeight       75.78;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+ARO1
+{
+   specie
+   {
+       molWeight       95.16;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+ARO2
+{
+   specie
+   {
+       molWeight       118.72;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+TERP
+{
+   specie
+   {
+       molWeight       136.24;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+XN
+{
+   specie
+   {
+       molWeight       14.0;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+XC
+{
+   specie
+   {
+       molWeight       12.0;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+CH4
+{
+   specie
+   {
+       molWeight       16.0;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+CL
+{
+   specie
+   {
+       molWeight       70.0;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+CL2
+{
+   specie
+   {
+       molWeight       35.5;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+CLO
+{
+   specie
+   {
+       molWeight       51.5;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+CLONO
+{
+   specie
+   {
+       molWeight       81.5;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+CLONO2
+{
+   specie
+   {
+       molWeight       97.45;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
+HCL
+{
+   specie
+   {
+       molWeight       36.5;
+   }
+   thermodynamics
+   {
+       Tlow            250;
+       Thigh           5000;
+       Tcommon         1000;
+       highCpCoeffs    ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+       lowCpCoeffs     ( 2.92664 0.00148798 -5.68476e-07 1.0097e-10 -6.75335e-15 -922.798 5.98053 );
+   }
+   transport
+   {
+       As              1.67121e-06;
+       Ts              170.672;
+   }
+   elements
+   {
+       Unknown         1;
+   }
+}
+
