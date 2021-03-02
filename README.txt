@@ -1,4 +1,12 @@
+Library Requirements:
 
+(Minimum recommended versions)
+gcc : 4.8.5 
+cmake: 3.8 
+boost: 1.48
+zlib: 1.2.7
+openmpi: 2.1.6 or mpich 3.2.1
+------------------------------------------------------------
 
 There two ways to use APFoam:
 
